@@ -1,0 +1,63 @@
+        <aside class="sidebar c-4-12">
+          <div id="sidebars" class="g">
+            <div class="sidebar">
+              <ul class="sidebar_list">
+                <li class="widget widget-sidebar">
+                  <h3>
+                    关于我们
+                  </h3>
+                  <div class="sidebar-text">
+                      我们是中国的数据科学社区。
+                  </div>
+                </li>
+                <li class="widget widget-sidebar">
+                  <h3>
+                    Sponsor
+                  </h3>
+                  <div class="ad-300">
+                    <a href="http://supstat.com/" target="_blank" >
+                      <img src="{{ site.baseurl}}/assets/images/supstat.jpeg" alt="北京数博思达信息科技有限公司" height="180" width="180">
+                    </a>
+                  </div>
+                  </li>
+                  
+                <li class="widget widget-sidebar">
+                  <h3>
+                    最新活动
+                  </h3>
+{% include aside/recent-posts.html %}
+                </li>
+ 
+                <li class="widget widget-sidebar">
+                  <h3>
+                    最近评论
+                  </h3>
+                  <ul id="ds-recent-comments" class="ds-recent-comments" data-num-items="11" data-show-title="1" data-show-avatars="1" data-show-time="1" data-show-admin="0" data-avatar-size="32" data-excerpt-length="50"></ul>
+                </li>
+                
+              <li class="widget widget-sidebar">
+                  <h3>
+                    最近访客
+                  </h3>
+                  <ul class="ds-recent-visitors"></ul>   
+              </li>
+
+              <li class="widget widget-sidebar">
+                  <h3>
+                    友情链接
+                  </h3>
+{% include aside/blogroll.html %}
+              </li>
+              </ul>
+              <ul class="sidebar_rows">
+                <div class="sb_left">
+                </div>
+                <div class="sb_right">
+                </div>
+              </ul>
+              <ul class="sidebar_list">
+              </ul>
+            </div>
+          </div>
+          <!--sidebars-->
+        </aside>

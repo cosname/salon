@@ -1,0 +1,39 @@
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="copyrights">
+          <!--start copyrights-->
+          <div class="row" id="copyright-note">
+            <span class="copy">
+              <a href="{{ site.baseurl}}/" title="Just another MyThemeShop Playground site">数据科学沙龙</a>Copyright © 2013</span>
+            <div class="footer-navigation">
+              <nav id="navigation">
+                <ul id="menu-top" class="menu sf-js-enabled">
+                  <li id="menu-item-1039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1039">
+                    <span>•</span><a href="{{ site.baseurl}}/">主页</a>
+                  </li>
+                  <li id="menu-item-1080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1080">
+                    <span>•</span><a href="{{ site.baseurl}}/contact-us/">联系我们</a>
+                  </li>
+                  <li id="menu-item-1048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1048">
+                    <span>•</span><a href="{{ site.baseurl}}/sitemap.txt">网站地图</a>
+                  </li>
+                  <li id="menu-item-1049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049">
+                    <span>•</span><a href="{{ site.baseurl}}/atom.xml">订阅</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!--end copyrights-->
+        </div>
+      </div>
+      <!--.footer-content-->
+    </div>
+    <!--.container-->
+  </footer>
+  <!--footer-->
+ <!--start custom JS-->	
+{% for js in page.js %}<script src="{{site.baseurl}}/assets/js/" type="text/javascript" charset="utf-8"></script>
+{% endfor %}
+<!--end custom JS-->

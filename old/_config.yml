@@ -1,0 +1,43 @@
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:categories/:year/:month/:title 
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+auto: true
+pygments: false
+markdown: kramdown
+
+paginate: 5
+
+# Themes are encouraged to use these universal variables 
+# so be sure to set them if your theme uses them.
+#
+title : 数据科学沙龙
+tagline: Data Science and R
+description: 
+author :
+  name : 
+  email : 
+  github : 
+  twitter : 
+
+baseurl: 
+product_url: http://idatasci.org
+  
+links:
+    - url: "http://cos.name"
+      name: 统计之都
+      title: 中国统计学门户网站
+
+sliders:
+    - img: p3.jpg
+      url: /beijing/2013/08/cos-salon-bj-2013-jul-summary
+      caption: "COS数据分析沙龙（北京站）第10期"
+      
+    - img: p4.jpg
+      url: /beijing/2013/07/cos-salon-beijing-sammury-2013-june
+      caption: "COS数据分析沙龙（北京站）第9期 "
+      
+    - img: p5.jpg
+      url: /shanghai/2013/05/shanghai-r-salon-may-2013
+      caption: "上海R用户沙龙（May 11, 2013 @联合创业办公社）"

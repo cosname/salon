@@ -1,0 +1,468 @@
+---
+layout: page
+title: 会议日程
+---
+ 
+<style>
+/*AGENDA*/
+.leftColumn {width: 13%;text-transform: uppercase; background-color:#e9e9e9; padding:10px; border-bottom:#ddd solid 1px; font-size:.9em; line-height:1.2em; font-weight:bold; color:#3a739b ; vertical-align:middle}
+.rightColumn {width: 92% ; background-color:#f3f3f3; padding:10px;  border-bottom:#ddd solid 1px; line-height:1.3em}
+.rightColumn a {font-size:1em; color:#3a739b ;  text-decoration:none}
+.rightColumn a:hover {text-decoration:underline}
+.agendaTitle {font-size:1.1em;}
+.agendaDuration, .agendaSlides, .agendaVideo, .agendaDuration, .agendaSlides, .agendaVideo {font-size:.9em; padding-right:20px}
+.agendaTable { width:98%; border:#ddd solid 1px; }
+.agendaTrackA0,.agendaTrackA1,.agendaTrackA2,.agendaTrackA3,.agendaTrackA4 { display:block; float:left; height:auto; width:43%; margin-right:8px; padding:10px 0 5px 5px; color:#000 }
+.agendaTrackB0,.agendaTrackB1,.agendaTrackB2,.agendaTrackB3,.agendaTrackB4 { display:block; float:left; height:auto;width:43%; margin-left:8px; padding:10px 10px 5px 0; color:#000 }
+.agendaTrackC0,.agendaTrackC1,.agendaTrackC2,.agendaTrackC3,.agendaTrackC4 { display:block; float:right; height:auto;width:43%; margin-left:8px; padding:10px 10px 5px 0; color:#000 }
+.A0, .A1, .A2, .A3, .A4, .B0, .B1, .B2, .B3, .B4, .C0, .C1, .C2, .C3, .C4 { display:block; height:auto; width:100%; padding:10px 0 5px 0px; color:#000 }
+.agendaTrackSpeaker , .agendaTrackDuration , .agendaTrackSlides , .agendaTrackVideo { color:#555 ; font-size:.9em; }
+.agendaTrackLabelA, .agendaTrackLabelB, .agendaTrackLabelC{ display:block; float:left; background-color:#32719d; height:auto; width:100%; color:#fff; padding:2px 0 0 10px; margin:0 auto 10px auto}
+.agendaDate { font-size:1.2em; color:#32719d; }
+.agendaLabelTime, .agendaLabelDate { background-color:#32719d; color:#ffffff; padding:12px}
+.agendaLabelDate { font-size:1.3em; border-left:#86CBB3 1px dotted; letter-spacing:.1em}
+.buttonExercises {display:block;  background-color:#ebf0f3; padding:10px 15px; color:#32719d; text-transform:uppercase; margin-bottom:5px; width:260px; text-align:center; margin:15px 0 ; -webkit-box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.28);
+-moz-box-shadow:    2px 2px 2px 0px rgba(50, 50, 50, 0.28);
+box-shadow:         2px 2px 2px 0px rgba(50, 50, 50, 0.28);}
+.buttonExercises a{color:#32719d; text-decoration:none;}
+	
+/*SPEAKER*/
+#speakers {width:700px}
+.speakerLeft, .speakerRight { display:inline-block }
+.speakerRight { float:right }
+.speakerPic { float:left; display:inline-block; width:150px; height:134px; }
+.speakerYear {color:#555; font-size:1.2em; padding-bottom:10px }
+.speakerTitle {color:#000; font-size:2em; line-height:1em; margin-bottom:5px }
+.speakerByline {color:#555; font-size:1.2em; margin-bottom:20px }
+.speakerSlide, .speakerVideo { display:inline-block; padding:20px 20px 0 0; color:#32719d; font-size:1.2em; line-height:2.5em}
+#speakerSelector { height:25px; background-color:#F3F3F3; border: #D8D8D8 1px solid; margin-top:7px}
+#speakers p { margin-bottom:20px;}
+</style>
+<table class="agendaTable" cellspacing="0" cellpadding="0"> 
+<tbody>
+    <tr>
+    <td class="agendaLabelTime" style="color:#fff">时间</td>
+    <td class="agendaLabelDate" style="color:#fff">2014年5月24日 白天 如论讲堂</td>	
+ <!--BREAK-->
+    </tr>			
+	
+	<tr>
+	  <td class="leftColumn">
+		<span class="time"> 09:00  - 09:30 </span></td>
+		<td class="rightColumn">	
+			<span class="agendaSpeaker">Hadley Wickham(RStudio)：R packages: principles and best practices</span>
+		</td>
+	</tr>
+	
+	<tr>
+	  <td class="leftColumn">
+		<span class="time"> 09:30  - 10:00 </span></td>
+		<td class="rightColumn">	
+			<span class="agendaSpeaker">David Smith(Revolution)：How the growth of R helps data-driven organizations succeed</span>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="leftColumn" style="background-color:#fff">
+		<span class="time">10:00  - 10:30 </span></td>
+		<td class="rightColumn" style="background-color:#fff">	
+			<span class="agendaTitle">休息（Break）&nbsp;&nbsp;&nbsp;</span>
+		</td>
+	</tr>
+	
+	<tr>
+	  <td class="leftColumn">
+		<span class="time"> 10:30  - 11:00 </span></td>
+		<td class="rightColumn">	
+			<span class="agendaSpeaker">余凯(百度IDL)：Deep Learning Unfolds Big Data Era</span>
+		</td>
+	</tr>	
+	
+	<tr>
+	  <td class="leftColumn">
+		<span class="time"> 11:00  - 11:30 </span></td>
+		<td class="rightColumn">	
+			<span class="agendaSpeaker">周明(微软亚洲研究院)：计算机对联和诗词</span>
+		</td>
+	</tr>
+	
+	<tr>
+	  <td class="leftColumn">
+		<span class="time"> 11:30  - 12:00 </span></td>
+		<td class="rightColumn">	
+			<span class="agendaSpeaker">王汉生(北大光华)：A Statistical Model for Social Network Labeling</span>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="leftColumn" style="background-color:#fff">
+		<span class="time">12:00  - 13:30 </span></td>
+		<td class="rightColumn" style="background-color:#fff">	
+			<span class="agendaTitle">中午休息（Lunch）&nbsp;&nbsp;&nbsp;</span>
+		</td>
+	</tr>
+	
+	<tr>
+	  <td class="leftColumn">
+		<span class="time"> 13:30  - 14:00 </span></td>
+		<td class="rightColumn">	
+			<span class="agendaSpeaker">胡浩(微量网)：云计算时代的量化投资</span>
+		</td>
+	</tr>
+	
+	<tr>
+	  <td class="leftColumn">
+		<span class="time"> 14:00  - 14:30 </span></td>
+		<td class="rightColumn">	
+			<span class="agendaSpeaker">靳志辉(腾讯)：广告定向中的用户分析</span>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="leftColumn" style="background-color:#fff">
+		<span class="time">14:30  - 15:15 </span></td>
+		<td class="rightColumn" style="background-color:#fff">	
+			<span class="agendaTitle">Lightning Talk:&nbsp;&nbsp;&nbsp;</span>
+			<br>
+				<li> SupStat</li>
+				<li> Rstudio</li>
+				<li> Springer</li>
+				<li> 1degreenorth</li>
+				<li> Revolution</li>
+				<li> 中華R軟體研發暨應用協會</li>
+				<li> Other</li>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="leftColumn" style="background-color:#fff">
+		<span class="time">15:15  - 15:30 </span></td>
+		<td class="rightColumn" style="background-color:#fff">	
+			<span class="agendaTitle">休息（Break）&nbsp;&nbsp;&nbsp;</span>
+		</td>
+	</tr>
+	
+	<tr>
+	  <td class="leftColumn">
+		<span class="time">15:30 - 16:00 </span></td>
+		<td class="rightColumn">	
+			<span class="agendaSpeaker">鄭義(國立中山大學): 基金評選平台之建立</span>
+		</td>
+	</tr>
+	
+	<tr>
+	  <td class="leftColumn">
+		<span class="time"> 16:00 - 16:30 </span></td>
+		<td class="rightColumn">	
+			<span class="agendaSpeaker">廖逸竹(优酷土豆)：玩转三亿视频—数据分析在视频产业的应用</span>
+		</td>
+	</tr>
+
+	<tr>
+	  <td class="leftColumn" style="background-color:#fff">
+		<span class="time"> 16:30  - 17:30 </span></td>
+		<td class="rightColumn" style="background-color:#fff">	
+			<span class="agendaSpeaker">大数据/数据科学主题讨论&提问环节<br>
+				嘉宾：余凯、吴喜之、王汉生、姚远、杜长嵘、胡浩<br>
+				主持人：林祯舜
+			</span>
+		</td>
+	</tr>	
+</tbody>	
+</table>
+	
+<table class="agendaTable" cellspacing="0" cellpadding="0"> 
+<tbody>
+    <tr>
+    <td class="agendaLabelTime" style="color:#fff">时间</td>
+    <td class="agendaLabelDate" style="color:#fff">2014年5月24日 晚上(咖啡厅)</td>	
+ <!--BREAK-->
+    </tr>	
+	
+	<tr>
+	  <td class="leftColumn" style="background-color:#fff">
+		<span class="time">19:30  - 22:30 </span></td>
+		<td class="rightColumn" style="background-color:#fff">		
+			<span class="agendaSpeaker">咖啡厅随心所欲自由讨论，穿插部分演讲</span>
+		</td>
+	</tr>
+</tbody>	
+</table>		
+	
+	
+	
+	
+	
+	
+	
+<table class="agendaTable" cellspacing="0" cellpadding="0"> 
+<tbody>
+    <tr>
+    <td class="agendaLabelTime" style="color:#fff">时间</td>
+    <td class="agendaLabelDate" style="color:#fff">2014年5月25日 明德商学楼</td>	
+		<!--BREAK-->
+    </tr>	
+	<tr>
+		<td class="leftColumn">
+			<span class="time">09:00  - 10:00 </span></td>
+		<td class="rightColumn">
+			<div class="agendaTrackA1 agendaTrack063020140100pm">
+				<div class="agendaTrackLabelA"> A场(明德商学楼102，150人会场) <br>
+					专题1&nbsp;-&nbsp; 数据模型</div>
+				<span class="agendaTitle">Hacking Models with R</span><br>
+				<span class="agendaTrackSpeaker">張家齊 &nbsp;&nbsp;</span><br>
+					<span class="agendaTrackDuration"><span class="agendaDuration">30 min</span> </span>
+					
+					<div class="A1">
+						<span class="agendaTitle">Multi-Cluster Detection</a></span>
+						<br><span class="agendaTrackSpeaker">James Wicker &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>
+			</div>
+			<div class="agendaTrackB1  agendaTrack063020140100pm">
+				<div class="agendaTrackLabelB"> B场(明德商学楼202，150人会场) <br>
+					专题4&nbsp;-&nbsp; 大数据产业</div>
+				<span class="agendaTitle">大数据的新方向：公开同享趋势下的新数据产业</span><br>
+				<span class="agendaTrackSpeaker">陈堰平 &nbsp;&nbsp;</span><br>
+					<span class="agendaTrackDuration"><span class="agendaDuration">30 min</span> </span>
+					
+					<div class="B1">
+						<span class="agendaTitle">R-Web: 大数据分析及导引云平台</a></span>
+						<br><span class="agendaTrackSpeaker">陈景祥 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>
+			</div>
+			<div class="agendaTrackC1  agendaTrack063020140100pm">
+				<div class="agendaTrackLabelC"> C场(明德商学楼302，150人会场) <br>
+					专题7&nbsp;-&nbsp;<style>.agendaTrack063020140100pm {width:30% !important; float:left;}</style> R与其他工具</div>
+				<span class="agendaTitle">Data Analysis with R and Python</span><br>
+				<span class="agendaTrackSpeaker">郭韋廷 &nbsp;&nbsp;</span><br>
+					<span class="agendaTrackDuration"><span class="agendaDuration">30 min</span> </span>
+					
+					<div class="C1">
+						<span class="agendaTitle">R与Office的整合</a></span>
+						<br><span class="agendaTrackSpeaker">李舰 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+	  <td class="leftColumn" style="background-color:#fff">
+		<span class="time">10:00  - 10:30 </span></td>
+		<td class="rightColumn" style="background-color:#fff">		
+			<span class="agendaSpeaker">休息(Break)</span>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="leftColumn">
+			<span class="time">10:30  - 12:00 </span></td>
+		<td class="rightColumn">
+			<div class="agendaTrackA1 agendaTrack063020140100pm">
+				<div class="agendaTrackLabelA"> A场(明德商学楼102，150人会场) <br>
+					专题2&nbsp;-&nbsp; 量化投资</div>
+				<span class="agendaTitle">基于R的程序化交易</span><br>
+				<span class="agendaTrackSpeaker">景亮 &nbsp;&nbsp;</span><br>
+					<span class="agendaTrackDuration"><span class="agendaDuration">30 min</span> </span>
+					
+					<div class="A1">
+						<span class="agendaTitle">开发的血和泪，交易的冰与火</a></span>
+						<br><span class="agendaTrackSpeaker">牟官讯 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>					
+					<div class="A1">
+						<span class="agendaTitle">R语言与金融大数据应用</a></span>
+						<br><span class="agendaTrackSpeaker">张丹 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>
+			</div>
+			<div class="agendaTrackB1  agendaTrack063020140100pm">
+				<div class="agendaTrackLabelB"> B场(明德商学楼202，150人会场) <br>
+					专题5&nbsp;-&nbsp; R中的大数据</div>
+				<span class="agendaTitle">突破R内存瓶颈的若干技术</span><br>
+				<span class="agendaTrackSpeaker">寇强 &nbsp;&nbsp;</span><br>
+					<span class="agendaTrackDuration"><span class="agendaDuration">30 min</span> </span>
+					
+					<div class="B1">
+						<span class="agendaTitle">Large Scale Learning with R</a></span>
+						<br><span class="agendaTrackSpeaker">吳齊軒 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>					
+					<div class="B1">
+						<span class="agendaTitle">Big Data Analysis with RHadoop</a></span>
+						<br><span class="agendaTrackSpeaker">丘祐瑋 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>
+			</div>
+			<div class="agendaTrackC1  agendaTrack063020140100pm">
+				<div class="agendaTrackLabelC"> C场(明德商学楼302，150人会场) <br>
+					专题8&nbsp;-&nbsp;<style>.agendaTrack063020140100pm {width:30% !important; float:left;}</style>数据分析实战</div>
+				<span class="agendaTitle">数据分析在传统行业商业决策中的应用</span><br>
+				<span class="agendaTrackSpeaker">林荟 &nbsp;&nbsp;</span><br>
+					<span class="agendaTrackDuration"><span class="agendaDuration">30 min</span> </span>
+					
+					<div class="C1">
+						<span class="agendaTitle">小而美的数据产品</a></span>
+						<br><span class="agendaTrackSpeaker">欧阳鹤 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>					
+					<div class="C1">
+						<span class="agendaTitle">R与企业级数据挖掘</a></span>
+						<br><span class="agendaTrackSpeaker">刘思喆 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>
+			</div>
+		</td>
+	</tr>
+	
+	<tr>
+	  <td class="leftColumn" style="background-color:#fff">
+		<span class="time">12:00  - 14:00 </span></td>
+		<td class="rightColumn" style="background-color:#fff">		
+			<span class="agendaSpeaker">中午休息(Lunch)</span>
+		</td>
+	</tr>
+ 	
+	<tr>
+		<td class="leftColumn">
+			<span class="time">14:00  - 15:30 </span></td>
+		<td class="rightColumn">
+			<div class="agendaTrackA1 agendaTrack063020140100pm">
+				<div class="agendaTrackLabelA"> A场(明德商学楼102，150人会场) <br>
+					专题3&nbsp;-&nbsp; R数据可视化</div>
+				<span class="agendaTitle">Interactive Visualization with R</span><br>
+				<span class="agendaTrackSpeaker">王亮博 &nbsp;&nbsp;</span><br>
+					<span class="agendaTrackDuration"><span class="agendaDuration">30 min</span> </span>
+					
+					<div class="A1">
+						<span class="agendaTitle">它山之石可以攻玉：recharts图形包</a></span>
+						<br><span class="agendaTrackSpeaker">周扬 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>					
+					<div class="A1">
+						<span class="agendaTitle">ggvis</a></span>
+						<br><span class="agendaTrackSpeaker">Hadley Wickham &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>
+			</div>
+			<div class="agendaTrackB1  agendaTrack063020140100pm">
+				<div class="agendaTrackLabelB"> B场(明德商学楼202，150人会场) <br>
+					专题6&nbsp;-&nbsp; R高级技术</div>
+				<span class="agendaTitle">构建高效率的数据流水线：在R中使用管道操作</span><br>
+				<span class="agendaTrackSpeaker">任坤 &nbsp;&nbsp;</span><br>
+					<span class="agendaTrackDuration"><span class="agendaDuration">30 min</span> </span>
+					
+					<div class="B1">
+						<span class="agendaTitle">科研角度下的R包开发</a></span>
+						<br><span class="agendaTrackSpeaker">张晔 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>					
+					<div class="B1">
+						<span class="agendaTitle">R中大规模矩阵的特征分解、svd、nmf等</a></span>
+						<br><span class="agendaTrackSpeaker">邱怡轩 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>
+			</div>
+			<div class="agendaTrackC1  agendaTrack063020140100pm">
+				<div class="agendaTrackLabelC"> C场(明德商学楼302，150人会场) <br>
+					专题9&nbsp;-&nbsp;<style>.agendaTrack063020140100pm {width:30% !important; float:left;}</style>生物、心理学</div>
+				<span class="agendaTitle">Integrated Pipeline for Systems Pharmacology in R/Bioconductor</span><br>
+				<span class="agendaTrackSpeaker">肖楠 &nbsp;&nbsp;</span><br>
+					<span class="agendaTrackDuration"><span class="agendaDuration">30 min</span> </span>
+					
+					<div class="C1">
+						<span class="agendaTitle">R在新药研发中的应用</a></span>
+						<br><span class="agendaTrackSpeaker">杨环 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>					
+					<div class="C1">
+						<span class="agendaTitle">Combining R with Psychology——An illustration with SEM</a></span>
+						<br><span class="agendaTrackSpeaker">江歌 &nbsp;&nbsp;</span>
+						<br><span class="agendaTrackDuration"><span class="agendaDuration">30 min</span></span>
+					</div>
+			</div>
+		</td>
+	</tr>
+	
+	<tr>
+	  <td class="leftColumn" style="background-color:#fff">
+		<span class="time">15:30  - 16:00 </span></td>
+		<td class="rightColumn" style="background-color:#fff">		
+			<span class="agendaSpeaker">讨论休息</span>
+		</td>
+	</tr>
+ 	
+ </tbody>   
+ 
+ </table>
+<h4 id="meeting-room">会场安排</h4>
+
+<p>第一天：如论讲堂</p>
+
+<p>第二天：明德商学楼：0102，0202，0302</p>
+
+<h4 id="road-map">会场路线</h4>
+
+<p><img src="http://pic.yupoo.com/cosname/DEBlZJIo/rU17i.jpg" alt="路线图" /></p>
+
+<h4 id="jiudian">推荐酒店</h4>
+
+<p>大部分价格来自于携程网，去哪儿网，以及网站报价中的酒店直销价，不含优惠信息。</p>
+
+<p>一、友谊宾馆</p>
+
+<blockquote>
+  <p>地址：北京市海淀区中关村南大街1号，距离中国人民大学0.5公里<br />
+价格：敬宾楼标准房468元（无早餐）【酒店直销价】<br />
+床型：大床1.6m/双床1.1m<br />
+宽带：免费<br />
+评价：位置极佳，设施齐全，装修很大气；价格偏高，环境好，房间舒适。</p>
+</blockquote>
+
+<p>二、燕山大酒店</p>
+
+<blockquote>
+  <p>地址：北京市海淀区中关村大街甲38号，距离中国人民大学0.2公里<br />
+价格：公寓经济间328元（无早餐）【酒店直销价】<br />
+床型：大床1.8m/ 双床0.9m<br />
+宽带：免费<br />
+评价：装修较老，房间干净，整体还不错；交通便捷。  </p>
+</blockquote>
+
+<p><a class="more collapsed" href="##" data-toggle="collapse" data-target="#jiudian-more">查看更多»</a></p>
+
+<div id="jiudian-more" class="collapse">
+  <p>三、便宜居快捷酒店(双榆树店)</p>
+
+  <blockquote>
+    <p>地址：北京市海淀区双榆树西里10号楼，距离中国人民大学0.4公里<br />
+价格：普通标准间280元（无早餐）<br />
+床型：双床(1.1米)<br />
+楼层：1-3层<br />
+宽带：免费宽带<br />
+评价：交通方便，环境一般，设施较旧，房间舒适  </p>
+  </blockquote>
+
+  <p>四、永正商务酒店（北京苏州街店）</p>
+
+  <blockquote>
+    <p>位置：北京市海淀区苏州街18号，距离中国人民大学1.1公里<br />
+价格：标准大床间298元（含早餐，携程网）<br />
+床型：双人床1.5米，1张<br />
+楼层：1-3层<br />
+评价：服务不错,房间也干净,性价比很高；地理位置好   </p>
+  </blockquote>
+
+  <p>五、北京紫金阳光酒店公寓</p>
+
+  <blockquote>
+    <p>位置：北京市海淀区中关村知春路紫金数码园2号楼，距离中国人民大学1.2公里<br />
+价格：普通标准间268元（无早餐）<br />
+床型：双人床1.5米，1张<br />
+宽带：免费<br />
+评价：交通便利，紧邻知春路地铁，公寓式酒店，楼层高，大窗，比较安静，屋内整洁  </p>
+  </blockquote>
+</div>
+
+<p style="text-align:center"><a class="btn btn-primary" href="/2014/beijing">演讲信息</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-primary" href="/register">报名注册</a></p>

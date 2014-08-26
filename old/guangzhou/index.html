@@ -1,0 +1,47 @@
+---
+layout: page_no_comment
+title: 广州沙龙
+---
+<div class="about">
+
+{% capture about %}{% include  about/guangzhou.md %}{% endcapture %}
+{{ about | markdownify }}
+      
+</div>
+
+{% for post in site.categories.guangzhou %}          
+            <div class="post excerpt ">
+              <header>
+                <h2 class="title">
+                  <a href="{{ site.baseurl}}{{ post.url }}"
+                  title="{{ post.title }}" rel="bookmark">
+                    {{ post.title }}
+                  </a>
+                </h2>
+                <div class="post-info">
+                  发布于{{ post.date | date: "%Y 年 %m 月 %d 日" }} | <span class="ds-thread-count" data-thread-key="{{ post.id }}"></span>
+                </div>
+              </header>
+              <!--.header-->
+              {% if post.img %}<a href="{{ site.baseurl}}{{ post.url }}"
+              title="Porttitor Lectus Tincidunt Elementum Nascetur Montes" rel="nofollow"
+              id="featured-thumbnail">
+                <div class="featured-thumbnail">
+                  <img src="{{ site.baseurl}}/assets/images/thumbnail/{{ post.img }}" class="attachment-thumbnail wp-post-image"
+                  alt="{{ post.title }}" title="" height="150" width="150">
+                </div>
+              </a>{% endif %}
+              <div class="post-container">
+                <div class="post-content image-caption-format-1">
+                   {{ post.content | split: '<!-- more -->' | first }}
+                  <p class="readMore">
+                    <a href="{{ site.baseurl}}{{ post.url }}"
+                    rel="nofollow">
+                      Read More
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--.post excerpt-->
+ {% endfor %}   

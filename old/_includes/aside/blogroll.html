@@ -1,0 +1,5 @@
+                      <ul>
+                      {% for link in site.links %}
+                      <li> <a title="{{ link.title }} " href="{{ site.baseurl}}{{ link.url }}">{{ link.name }} </a>
+                        </li>{% endfor %}                        
+                      </ul>

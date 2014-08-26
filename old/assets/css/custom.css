@@ -1,0 +1,80 @@
+.slider { margin: 10px 0 10px!important;overflow: hidden;}
+/* Caption style */
+.flex-caption {width: 60%; padding: 1% 2%; margin: 0 18%; position: absolute; left: 0; bottom: 2em; background: rgba(231,231,232,.8); color: @grey; text-shadow: 0 -1px 0 rgba(255,255,255,.4); font-size: 0.8em; font-family: "museo-sans",sans-serif; line-height: 18px; text-align: center; }
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+.flex-caption { background: rgba(0, 0, 0, .6); color: #fff; text-shadow: 0 -1px 0 #000; font-size: 18px; line-height: 24px;font-family: Corbelbold, sans-serif;}
+.flex-container:hover > .flex-caption { background: rgba(0,0,0,.5)!important; }
+
+.flexslider {margin: 0 0 60px; border: none; -webkit-border-radius: 0px; -moz-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px; box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none}
+.flexslider ul{list-style:none}
+.flexslider ol{list-style:none}
+.flex-control-nav {bottom: -50px;}
+ul.slides{ margin:0 }
+
+a.flex-prev, a.flex-next{ -webkit-transition: none; -moz-transition: none; transition: none;}
+
+.article{border: none }
+.main-container .content { border: none }
+
+#copyright-note .footer-navigation { width: 50%; }
+#copyright-note span.copy{ width: 50% }
+
+#sidebars img.wp-post-image {
+  width: 65px;
+  height: 65px;
+}
+
+#popular-posts .left{ width: 75px }
+
+.paging
+{
+	font: 0.9em  Helvetica, sans-serif;
+	text-align: center;
+	color: #ccc;
+	margin: 1em 0 1em;
+	position: relative;
+  height: 25px;
+}
+
+.paging a.prev {
+    position: absolute;
+    left: 0px;
+}
+
+.paging  a.next {
+    position: absolute;
+    right: 0px;
+}
+
+
+.paging a:link, .paging a:visited{
+	color: #999;
+}
+
+.paging a:hover, .paging a:active
+{
+	color: #f06;
+}
+
+#sidebars .widget {
+    padding: 0 0 5px 0;
+}
+
+.bottom-logo{width: 30%; float:left}
+.company-intro{width: 70%; float: left}
+
+.company-intro p{ margin: 10px }
+.company-intro a{ color:red;}
+
+.ad-300 img {
+  background: none;  
+}
+
+@media screen and (max-width:865px){
+  .bottom-logo{display: none;}
+  .company-intro{width: 100%;}
+}
